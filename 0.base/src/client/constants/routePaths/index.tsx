@@ -1,0 +1,9 @@
+export const Housework = "/Housework";
+export const Kitchen = "/Kitchen";
+export const Leisurewear = "/Leisurewear";
+export const Life = "/Life";
+export const InteriorDesign = "/InteriorDesign";
+export const Sleep = "/Sleep";
+export const OfficeNTravel = "/OfficeNTravel";
+export const AllItems = "/AllItems";
+export const AboutLifeVC = "/AboutLifeVC";

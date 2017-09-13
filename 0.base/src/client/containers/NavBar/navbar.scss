@@ -1,0 +1,48 @@
+#navWrap {
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+    font-family: 微软雅黑, "Microsoft YaHei", SimHei;
+}
+
+#nav {
+    width: 1000px;
+    margin: 0 auto;
+    .nav-list {
+        text-align: center;
+    }
+    .nav-item {
+        height: 30px;
+        display: inline-block;
+        font-size: 14px;
+        color: rgb(51, 51, 51);
+        line-height: 18px;
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        position: relative;
+        padding: 0px 18px;
+        a {
+            height: 24px;
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            line-height: 18px;
+            text-decoration: none;
+            position: relative;
+            top: 3px;
+            &:hover,
+            &:active,
+            &.active,
+            &.current {
+                border-bottom: 3px solid #3b9f39;
+                color: #3faa3d;
+                text-decoration: none
+            }
+            &.active.home {
+                display: none;
+            }
+        }
+    }
+}
