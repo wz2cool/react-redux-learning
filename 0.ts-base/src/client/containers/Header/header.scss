@@ -1,0 +1,22 @@
+#header {
+    width: 1000px;
+    height: 68px;
+    margin: 0 auto;
+    padding-top: 39px;
+    position: relative;
+    #logo,
+    #logo a {
+        width: 318px;
+        height: 39px;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        z-index: 9;
+    }
+    .logo {
+        background-position: 0 0;
+        text-indent: -3000px;
+    }
+}

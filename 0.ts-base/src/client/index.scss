@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none outside none;
+}
+
+a {
+    &:hover,
+    &:active {
+        color: #83b842;
+        text-decoration: underline;
+        border: 0;
+        outline: 0 none;
+    }
+    &:link,
+    &:visited {
+        color: #333;
+        text-decoration: none;
+        border: 0;
+        outline: 0 none;
+    }
+}
+
+.i-global {
+    background-image: url(http://i1.lifevccdn.com/images/i_global2_v10.png);
+    background-repeat: no-repeat
+}
