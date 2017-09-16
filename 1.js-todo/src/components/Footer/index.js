@@ -10,7 +10,7 @@ class Footer extends Component {
             <a href='#' onClick={e => {
                 e.preventDefault();
                 this.propes.onFilterChange(filter);
-            } }>
+            }}>
                 {name}
             </a>
         )
