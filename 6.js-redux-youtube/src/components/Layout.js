@@ -1,7 +1,21 @@
 import React from "react";
+import { connect } from "react-redux";
 
-export default class Layout extends React.Component {
+class Layout extends React.Component {
     render() {
+        console.log(this.props);
         return null;
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        user: state.user.user,
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+
+}
+
+export default connect(mapStateToProps)(Layout);
