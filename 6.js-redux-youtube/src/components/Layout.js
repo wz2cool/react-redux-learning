@@ -20,10 +20,11 @@ class Layout extends React.Component {
             return <button onClick={this.fetchTweets.bind(this)}>load tweets</button>
         }
 
-        const mappedTweets = tweets.map((tweet) => <li>{tweet.text}</li>);
+        const mappedTweets = tweets.map((tweet) => <li key={tweet.id}>{tweet.text}</li>);
+        console.log(mappedTweets);
         return <div>
             <h1>{user.name}</h1>
-            {/* <ul>{mappedTweets}</ul> */}
+            <ul>{mappedTweets}</ul>
         </div>;
     }
 }
