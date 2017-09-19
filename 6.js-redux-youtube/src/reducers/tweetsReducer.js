@@ -1,25 +1,25 @@
 const initialState = {
     fetching: false,
     fetched: false,
-    users: [],
+    tweets: [],
     error: null,
 }
 
 export default function reducer(state = initialState, action) {
     switch (action.type) {
-        case "FETCH_USERS_START": {
+        case "FETCH_TWEETS": {
             return { ...state, fetching: true };
         }
-        case "FETCH_USERS_ERROR": {
+        case "FETCH_TWEETS_REJECTED": {
             return { ...state, fetching: false, error: action.payload };
         }
-        case "RECEIVE_USERS": {
+        case "FETCH_TWEETS_FULFILLED": {
             return {
                 ...state,
                 fetching: false,
                 fetched: true,
-                users: action.payload,
-            };
+                tweets: action.payload,
+            }
         }
     }
     return state;

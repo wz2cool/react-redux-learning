@@ -16,7 +16,7 @@ export function setUserName(name) {
 }
 
 export function setUserAge(age) {
-    return {
+    return { 
         type: "SET_USER_AGE",
         payload: age,
     }
